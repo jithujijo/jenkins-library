@@ -1,3 +1,3 @@
-def call(){
-    sh "docker image build -t java-application:latest ."
+def call(String buildnumber){
+    sh "docker image build -t java-application:${buildnumber} ."
 }
